@@ -149,19 +149,19 @@ namespace AussieClassics.Utilies
 
             public static Dictionary<Locale, string> Pavlova => new Dictionary<Locale, string>
             {
-                {Locale.Default, "Add Meringue to a Cake Tin and Cook. Remove from Tin, Add Mashed Passion Fruit, Slice and Serve."},
-                {Locale.English, "Add Meringue to a Cake Tin and Cook. Remove from Tin, Add Mashed Passion Fruit, Slice and Serve."},
+                {Locale.Default, "Add Meringue to a Cake Tin and Cook. Remove from Tin, Chop Passion Fruit twice and add, Slice and Serve."},
+                {Locale.English, "Add Meringue to a Cake Tin and Cook. Remove from Tin, Chop Passion Fruit twice and add, Slice and Serve."},
                 {Locale.BlankText, ""},
-                {Locale.French, "Mettre la meringue dans un moule à gâteau et faire cuire. Retirer du moule, ajouter la purée de fruits de la passion, couper en tranches et servir."},
-                {Locale.German, "Meringue in eine Kuchenform geben und backen. Aus der Form nehmen, pürierte Passionsfrüchte hinzufügen, in Scheiben schneiden und servieren."},
-                {Locale.Spanish, "Poner el merengue en un molde y cocer. Sacar del molde, añadir el puré de fruta de la pasión, cortar y servir."},
-                {Locale.Polish, "Dodać bezę do tortownicy i upiec. Wyjąć z formy, dodać puree z marakui, pokroić i podawać."},
-                {Locale.Russian, "Добавьте безе в форму для торта и приготовьте. Выньте из банки, добавьте пюре маракуйи, нарежьте и подавайте."},
-                {Locale.PortugueseBrazil, "Coloque o merengue em uma forma de bolo e cozinhe. Retire da forma, acrescente o purê de maracujá, corte em fatias e sirva."},
-                {Locale.Japanese, "メレンゲをケーキ型に入れて焼く。型から取り出し、マッシュしたパッションフルーツを加え、スライスして盛り付ける。"},
-                {Locale.ChineseSimplified, "将蛋白霜放入蛋糕罐中烹煮。从锡罐中取出，加入百香果泥，切片并上桌。"},
-                {Locale.Korean, "케이크 틀에 머랭을 넣고 조리합니다. 케이크 틀에서 꺼내 으깬 패션 프루트를 넣고 얇게 썰어 제공합니다."},
-                {Locale.Turkish, "Bir Kek Kalıbına Beze Ekleyin ve Pişirin. Kalaydan çıkarın, Çarkıfelek Meyvesi Püresi ekleyin, Dilimleyin ve Servis Edin."},
+                {Locale.French, "Mettre la meringue dans un moule à gâteau et faire cuire. Retirer du moule, hacher deux fois le fruit de la passion et l'ajouter, couper en tranches et servir."},
+                {Locale.German, "Meringue in eine Kuchenform geben und backen. Aus der Form nehmen, Passionsfrüchte zweimal hacken und hinzufügen, in Scheiben schneiden und servieren."},
+                {Locale.Spanish, "Poner el merengue en un molde y cocer. Sáquelo del molde, pique la fruta de la pasión dos veces y añádala, córtela en rodajas y sírvala."},
+                {Locale.Polish, "Dodać bezę do tortownicy i upiec. Wyjąć z formy, posiekać marakuję dwukrotnie, dodać, pokroić i podawać."},
+                {Locale.Russian, "Добавьте безе в форму для торта и приготовьте. Выньте из банки, дважды нарежьте маракуйю и добавьте, нарежьте и подавайте."},
+                {Locale.PortugueseBrazil, "Coloque o merengue em uma forma de bolo e cozinhe. Retire da forma, pique o maracujá duas vezes e adicione-o, corte em fatias e sirva."},
+                {Locale.Japanese, "メレンゲをケーキ型に入れて焼く。型から取り出し、パッションフルーツを2回刻んで加え、スライスして盛り付ける。"},
+                {Locale.ChineseSimplified, "将蛋白霜放入蛋糕罐中烹煮。从锡罐中取出，将百香果切碎两次后加入，切片后即可食用。"},
+                {Locale.Korean, "케이크 틀에 머랭을 넣고 조리합니다. 케이크 틀에서 꺼내 열정 과일을 두 번 자른 후 슬라이스하여 제공합니다."},
+                {Locale.Turkish, "Bir Kek Kalıbına Beze Ekleyin ve Pişirin. Kalaydan çıkarın, Çarkıfelek Meyvesini iki kez doğrayın ve ekleyin, Dilimleyin ve Servis Edin."},
             };
 
             public static Dictionary<Locale, string> PavlovaToppings => new Dictionary<Locale, string>
