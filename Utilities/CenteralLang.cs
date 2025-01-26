@@ -149,19 +149,19 @@ namespace AussieClassics.Utilies
 
             public static Dictionary<Locale, string> Pavlova => new Dictionary<Locale, string>
             {
-                { Locale.Default, "Separate Egg Whites from Yolks, Whisk Whites, add Sugar, Whisk Whites again, Add Meringue to a Cake Tin and Cook. Remove from Tin, Add Mashed Passion Fruit, Slice and Serve." },
-                { Locale.English, "Separate Egg Whites from Yolks, Whisk Whites, add Sugar, Whisk Whites again, Add Meringue to a Cake Tin and Cook. Remove from Tin, Add Mashed Passion Fruit, Slice and Serve." },
-                { Locale.BlankText, "" },
-                { Locale.French, "Séparer les blancs des jaunes d'œufs, fouetter les blancs, ajouter le sucre, fouetter à nouveau les blancs, ajouter la meringue dans un moule à gâteau et faire cuire. Retirer du moule, ajouter la purée de fruits de la passion, couper en tranches et servir." },
-                { Locale.German, "Das Eiweiß vom Eigelb trennen, das Eiweiß verquirlen, den Zucker hinzufügen, das Eiweiß erneut verquirlen, die Baisermasse in eine Tortenform geben und backen. Aus der Form nehmen, pürierte Passionsfrüchte hinzufügen, in Scheiben schneiden und servieren." },
-                { Locale.Spanish, "Separar las claras de las yemas, batir las claras, añadir el azúcar, batir las claras de nuevo, añadir el merengue a un molde y cocer. Sacar del molde, añadir el puré de fruta de la pasión, cortar y servir." },
-                { Locale.Polish, "Oddzielić białka od żółtek, ubić białka, dodać cukier, ponownie ubić białka, dodać bezę do formy i gotować. Wyjąć z formy, dodać puree z marakui, pokroić i podawać." },
-                { Locale.Russian, "Отделите яичные белки от желтков, взбейте белки, добавьте сахар, снова взбейте белки, выложите безе в форму для торта и приготовьте. Выньте из формы, добавьте пюре маракуйи, нарежьте и подавайте." },
-                { Locale.PortugueseBrazil, "Separe as claras das gemas, bata as claras, adicione o açúcar, bata as claras novamente, coloque o merengue em uma forma de bolo e cozinhe. Retire da forma, acrescente o purê de maracujá, corte em fatias e sirva." },
-                { Locale.Japanese, "卵黄と卵白を分け、卵白を泡立て、砂糖を加えて再び泡立て、メレンゲをケーキ型に入れて焼く。型から取り出し、マッシュしたパッションフルーツを加え、スライスして盛り付ける。" },
-                { Locale.ChineseSimplified, "将蛋白与蛋黄分开，打发蛋白，加入糖，再次打发蛋白，将蛋白霜放入蛋糕罐中煮熟。从蛋糕模中取出，加入百香果泥，切片，上桌。" },
-                { Locale.Korean, "달걀 흰자와 노른자를 분리하고, 흰자를 휘저어 설탕을 넣고, 다시 휘저은 다음 머랭을 케이크 틀에 넣고 조리합니다. 케이크 틀에서 꺼내 으깬 패션후르츠를 넣고 슬라이스하여 제공합니다." },
-                { Locale.Turkish, "Yumurta Aklarını Sarılarından Ayırın, Akları Çırpın, Şeker Ekleyin, Akları Tekrar Çırpın, Kek Kalıbına Beze Ekleyin ve Pişirin. Kalıptan çıkarın, Çarkıfelek Meyvesi Püresi ekleyin, dilimleyin ve servis edin." },
+                {Locale.Default, "Add Meringue to a Cake Tin and Cook. Remove from Tin, Add Mashed Passion Fruit, Slice and Serve."},
+                {Locale.English, "Add Meringue to a Cake Tin and Cook. Remove from Tin, Add Mashed Passion Fruit, Slice and Serve."},
+                {Locale.BlankText, ""},
+                {Locale.French, "Mettre la meringue dans un moule à gâteau et faire cuire. Retirer du moule, ajouter la purée de fruits de la passion, couper en tranches et servir."},
+                {Locale.German, "Meringue in eine Kuchenform geben und backen. Aus der Form nehmen, pürierte Passionsfrüchte hinzufügen, in Scheiben schneiden und servieren."},
+                {Locale.Spanish, "Poner el merengue en un molde y cocer. Sacar del molde, añadir el puré de fruta de la pasión, cortar y servir."},
+                {Locale.Polish, "Dodać bezę do tortownicy i upiec. Wyjąć z formy, dodać puree z marakui, pokroić i podawać."},
+                {Locale.Russian, "Добавьте безе в форму для торта и приготовьте. Выньте из банки, добавьте пюре маракуйи, нарежьте и подавайте."},
+                {Locale.PortugueseBrazil, "Coloque o merengue em uma forma de bolo e cozinhe. Retire da forma, acrescente o purê de maracujá, corte em fatias e sirva."},
+                {Locale.Japanese, "メレンゲをケーキ型に入れて焼く。型から取り出し、マッシュしたパッションフルーツを加え、スライスして盛り付ける。"},
+                {Locale.ChineseSimplified, "将蛋白霜放入蛋糕罐中烹煮。从锡罐中取出，加入百香果泥，切片并上桌。"},
+                {Locale.Korean, "케이크 틀에 머랭을 넣고 조리합니다. 케이크 틀에서 꺼내 으깬 패션 프루트를 넣고 얇게 썰어 제공합니다."},
+                {Locale.Turkish, "Bir Kek Kalıbına Beze Ekleyin ve Pişirin. Kalaydan çıkarın, Çarkıfelek Meyvesi Püresi ekleyin, Dilimleyin ve Servis Edin."},
             };
 
             public static Dictionary<Locale, string> PavlovaToppings => new Dictionary<Locale, string>
@@ -179,6 +179,23 @@ namespace AussieClassics.Utilies
                 { Locale.ChineseSimplified, "切碎草莓，根据要求加入到 Pavlova 中。切碎奇异果，根据要求加入帕夫洛娃。" },
                 { Locale.Korean, "딸기를 잘게 썰어 파블로바에 넣고 요청하면 추가합니다. 키위 과일을 잘게 썰어 요청 시 파블로바에 추가합니다." },
                 { Locale.Turkish, "Çilekleri doğrayın ve istenildiğinde Pavlova'ya ekleyin. Kivi doğranır ve istenildiğinde Pavlova'ya eklenir." },
+            };
+            
+            public static Dictionary<Locale, string> Meringue => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Separate Egg Whites from Yolks, Whisk Whites, add Sugar, Whisk Whites again"},
+                {Locale.English, "Separate Egg Whites from Yolks, Whisk Whites, add Sugar, Whisk Whites again"},
+                {Locale.BlankText, ""},
+                {Locale.French, "Séparer les blancs des jaunes d'œufs, fouetter les blancs, ajouter le sucre, fouetter à nouveau les blancs."},
+                {Locale.German, "Eiweiß vom Eigelb trennen, Eiweiß aufschlagen, Zucker hinzufügen, Eiweiß erneut aufschlagen"},
+                {Locale.Spanish, "Separe las claras de las yemas, bata las claras, añada el azúcar y vuelva a batir las claras."},
+                {Locale.Polish, "Oddzielić białka od żółtek, ubić białka, dodać cukier, ponownie ubić białka."},
+                {Locale.Russian, "Отделите яичные белки от желтков, взбейте белки, добавьте сахар, снова взбейте белки."},
+                {Locale.PortugueseBrazil, "Separe as claras das gemas, bata as claras, adicione o açúcar e bata as claras novamente"},
+                {Locale.Japanese, "卵黄と卵白を分け、卵白を泡立て、砂糖を加え、再び卵白を泡立てる。"},
+                {Locale.ChineseSimplified, "将蛋白与蛋黄分离，打发蛋白，加入糖，再次打发蛋白"},
+                {Locale.Korean, "달걀 흰자와 노른자를 분리하고, 흰자를 휘저어 설탕을 넣고, 다시 흰자를 휘젓습니다."},
+                {Locale.Turkish, "Yumurta Aklarını Sarılarından Ayırın, Akları Çırpın, Şeker Ekleyin, Akları Tekrar Çırpın"},
             };
         }
 

@@ -119,6 +119,7 @@ namespace AussieClassics.Utilities
         public static Dish DishPavlovaToppings => (Dish)GDOUtils.GetCustomGameDataObject<DishPavlovaToppings>().GameDataObject;
         public static Dish DishVegemiteToast => (Dish)GDOUtils.GetCustomGameDataObject<DishVegemiteToast>().GameDataObject;
         public static Dish DishVegemiteToastCheese => (Dish)GDOUtils.GetCustomGameDataObject<DishVegemiteToastCheese>().GameDataObject;
+        public static Dish DishMeringue => (Dish)GDOUtils.GetCustomGameDataObject<DishMeringue>().GameDataObject;
 
         #endregion
 

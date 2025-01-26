@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
 using KitchenLib;
 using KitchenLib.Logging.Exceptions;
 using KitchenMods;
@@ -17,7 +16,6 @@ using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 
 namespace AussieClassics
 {
-    
     // https://www.flaticon.com/free-icon/whisk_184490 - Wisk Icon
     // https://sketchfab.com/3d-models/low-poly-kangaroo-31950174017f4fdc8ec7ade267da7c2f - Kangaroo
     

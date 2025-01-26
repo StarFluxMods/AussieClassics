@@ -20,20 +20,20 @@ namespace AussieClassics.Customs.ItemGroups
                 Items = new List<Item>
                 {
                     GDOReferences.Plate,
+                    GDOReferences.BreadToast,
                 },
-                Min = 1,
-                Max = 1,
+                Min = 2,
+                Max = 2,
                 IsMandatory = true
             },
             new ItemGroup.ItemSet
             {
                 Items = new List<Item>
                 {
-                    GDOReferences.BreadToast,
                     GDOReferences.Vegemite,
                 },
-                Min = 2,
-                Max = 2,
+                Min = 1,
+                Max = 1,
                 IsMandatory = false
             },
             new ItemGroup.ItemSet

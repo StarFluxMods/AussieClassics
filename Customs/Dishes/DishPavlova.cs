@@ -17,6 +17,11 @@ namespace AussieClassics.Customs.Dishes
         public override DishType Type => DishType.Dessert;
         public override int Difficulty => 4;
 
+        public override List<Dish> AlsoAddRecipes => new List<Dish>
+        {
+            GDOReferences.DishMeringue
+        };
+
         public override List<string> StartingNameSet => new()
         {
             "Cloud Nine Bites",
