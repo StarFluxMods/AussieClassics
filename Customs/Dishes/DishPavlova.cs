@@ -43,6 +43,7 @@ namespace AussieClassics.Customs.Dishes
         {
             GDOReferences.Cook,
             GDOReferences.Whisk,
+            GDOReferences.RequireHob,
             GDOReferences.Chop,
         };
 

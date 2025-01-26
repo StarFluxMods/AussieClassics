@@ -134,6 +134,30 @@ namespace AussieClassics
                         });
                     }
                 }
+
+                if (args.gamedata.TryGet(ApplianceReferences.Hob, out Appliance Hob))
+                {
+                    bool found = false;
+                    foreach (Appliance.ApplianceProcesses process in Mixer.Processes)
+                    {
+                        if (process.Process == GDOReferences.RequireHob)
+                        {
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (!found)
+                    {
+                        Mixer.Processes.Add(new Appliance.ApplianceProcesses
+                        {
+                            Process = GDOReferences.RequireHob,
+                            Speed = 1,
+                            Validity = ProcessValidity.Generic,
+                            IsAutomatic = false
+                        });
+                    }
+                }
             };
 
             // RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));

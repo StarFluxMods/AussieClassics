@@ -55,6 +55,7 @@ namespace AussieClassics.Utilities
 
         #region Appliance
 
+        public static Appliance Hob => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Hob);
         public static Appliance Countertop => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Countertop);
         public static Appliance Mixer => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Mixer);
         public static Appliance WallpaperApplicator => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.WallpaperApplicator);
@@ -73,6 +74,7 @@ namespace AussieClassics.Utilities
         #region Process
 
         public static Process Whisk => (Process)GDOUtils.GetCustomGameDataObject<Whisk>().GameDataObject;
+        public static Process RequireHob => (Process)GDOUtils.GetCustomGameDataObject<RequireHob>().GameDataObject;
 
         #endregion
         
