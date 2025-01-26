@@ -2,6 +2,7 @@
 using AussieClassics.Customs.Dishes;
 using AussieClassics.Customs.ItemGroups;
 using AussieClassics.Customs.Items;
+using AussieClassics.Customs.PlayerCosmetics;
 using AussieClassics.Customs.Processes;
 using AussieClassics.Customs.RestaurantSettings;
 using IngredientLib.Ingredient.Items;
@@ -54,11 +55,11 @@ namespace AussieClassics.Utilities
         public static Item BigCakeTin => (Item)GDOUtils.GetExistingGDO(ItemReferences.BigCakeTin);
 
         #endregion
-        
+
         #region ItemGroup
-        
+
         public static ItemGroup PizzaPlated => (ItemGroup)GDOUtils.GetExistingGDO(ItemGroupReferences.PizzaPlated);
-        
+
         #endregion
 
         #region Appliance
@@ -70,11 +71,11 @@ namespace AussieClassics.Utilities
         public static Appliance FlooringApplicator => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.FlooringApplicator);
 
         #endregion
-        
+
         #region Dish
 
         public static Dish PizzaBase => (Dish)GDOUtils.GetExistingGDO(DishReferences.PizzaBase);
-        
+
         #endregion
 
         #endregion
@@ -87,11 +88,16 @@ namespace AussieClassics.Utilities
 
         #region Process
 
-        public static Process Whisk => (Process)GDOUtils.GetCustomGameDataObject<Whisk>().GameDataObject;
         public static Process RequireHob => (Process)GDOUtils.GetCustomGameDataObject<RequireHob>().GameDataObject;
+        public static Process Whisk => (Process)GDOUtils.GetCustomGameDataObject<Whisk>().GameDataObject;
 
         #endregion
-        
+
+        #region PlayerCosmetic
+
+        public static PlayerCosmetic KangarooOutfit => (PlayerCosmetic)GDOUtils.GetCustomGameDataObject<KangarooOutfit>().GameDataObject;
+
+        #endregion
 
         #region Item
 
@@ -131,25 +137,26 @@ namespace AussieClassics.Utilities
         #region Dish
 
         public static Dish DishFairyBread => (Dish)GDOUtils.GetCustomGameDataObject<DishFairyBread>().GameDataObject;
+        public static Dish DishMeringue => (Dish)GDOUtils.GetCustomGameDataObject<DishMeringue>().GameDataObject;
         public static Dish DishPavlova => (Dish)GDOUtils.GetCustomGameDataObject<DishPavlova>().GameDataObject;
         public static Dish DishPavlovaToppings => (Dish)GDOUtils.GetCustomGameDataObject<DishPavlovaToppings>().GameDataObject;
+        public static Dish DishPizzaEgg => (Dish)GDOUtils.GetCustomGameDataObject<DishPizzaEgg>().GameDataObject;
         public static Dish DishVegemiteToast => (Dish)GDOUtils.GetCustomGameDataObject<DishVegemiteToast>().GameDataObject;
         public static Dish DishVegemiteToastCheese => (Dish)GDOUtils.GetCustomGameDataObject<DishVegemiteToastCheese>().GameDataObject;
-        public static Dish DishMeringue => (Dish)GDOUtils.GetCustomGameDataObject<DishMeringue>().GameDataObject;
 
         #endregion
 
         #region Appliance
 
+        public static Appliance KiwiFruitProvider => (Appliance)GDOUtils.GetCustomGameDataObject<KiwiFruitProvider>().GameDataObject;
         public static Appliance OutbackGround => (Appliance)GDOUtils.GetCustomGameDataObject<OutbackGround>().GameDataObject;
         public static Appliance OutbackTree => (Appliance)GDOUtils.GetCustomGameDataObject<OutbackTree>().GameDataObject;
+        public static Appliance PassionFruitProvider => (Appliance)GDOUtils.GetCustomGameDataObject<PassionFruitProvider>().GameDataObject;
         public static Appliance RoadWithCars => (Appliance)GDOUtils.GetCustomGameDataObject<RoadWithCars>().GameDataObject;
         public static Appliance RoughTerrainLeft => (Appliance)GDOUtils.GetCustomGameDataObject<RoughTerrainLeft>().GameDataObject;
         public static Appliance RoughTerrainRight => (Appliance)GDOUtils.GetCustomGameDataObject<RoughTerrainRight>().GameDataObject;
         public static Appliance SprinklesProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SprinklesProvider>().GameDataObject;
         public static Appliance VegemiteProvider => (Appliance)GDOUtils.GetCustomGameDataObject<VegemiteProvider>().GameDataObject;
-        public static Appliance PassionFruitProvider => (Appliance)GDOUtils.GetCustomGameDataObject<PassionFruitProvider>().GameDataObject;
-        public static Appliance KiwiFruitProvider => (Appliance)GDOUtils.GetCustomGameDataObject<KiwiFruitProvider>().GameDataObject;
 
         #endregion
     }
