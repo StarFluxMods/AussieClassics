@@ -41,7 +41,7 @@ namespace AussieClassics
         public const string MOD_AUTHOR = "StarFluxGames";
         public const string MOD_GAMEVERSION = ">=1.2.0";
 
-        public static bool ENABLE_ADDITIONAL_LOBBY_DISHES = true;
+        public static bool ENABLE_ADDITIONAL_LOBBY_DISHES = false;
         
         internal static readonly string ACHIEVEMENT_BURN_PAVLOVA = "ACHIEVEMENT_BURN_PAVLOVA";
         internal static readonly string ACHIEVEMENT_TIM_TAM_COFFEE = "ACHIEVEMENT_TIM_TAM_COFFEE";
