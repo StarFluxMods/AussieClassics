@@ -39,6 +39,7 @@ namespace AussieClassics.Customs.ItemGroups
                 Text = "P"
             }
         };
+        public override ItemValue ItemValue => ItemValue.MediumLarge;
         
         public override void OnRegister(ItemGroup gameDataObject)
         {

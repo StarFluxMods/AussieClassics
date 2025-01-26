@@ -48,7 +48,7 @@ namespace AussieClassics.Customs.ItemGroups
             }
         };
 
-        public override ItemValue ItemValue => ItemValue.Medium;
+        public override ItemValue ItemValue => ItemValue.Small;
         
         public override void OnRegister(ItemGroup gameDataObject)
         {
