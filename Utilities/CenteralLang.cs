@@ -91,6 +91,23 @@ namespace AussieClassics.Utilies
                 (Locale.Korean, new UnlockInfo { Name = "파블로바 - 추가 토핑", Description = "파블로바에 딸기와 키위 과일을 추가합니다.", FlavourText = "더 많은 과일, 더 많은 재미, 더 멋진!" }),
                 (Locale.Turkish, new UnlockInfo { Name = "Pavlova - Ekstra Malzemeler", Description = "Pavlova'ya Çilek ve Kivi Meyvesi Ekliyor", FlavourText = "Daha çok meyve, daha çok eğlence, daha muhteşem!" }),
             };
+            
+            public static List<(Locale, UnlockInfo)> PizzaEgg => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "Pizza - Egg", Description = "Adds egg as a pizza topping", FlavourText = "Crack it, bake it, love it."}),
+                (Locale.English, new UnlockInfo{Name = "Pizza - Egg", Description = "Adds egg as a pizza topping", FlavourText = "Crack it, bake it, love it."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", Description = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "Pizza - Œuf", Description = "Ajouter un œuf comme garniture de pizza", FlavourText = "Craquez-le, faites-le cuire, aimez-le."}),
+                (Locale.German, new UnlockInfo{Name = "Pizza - Ei", Description = "Fügt Ei als Pizzabelag hinzu", FlavourText = "Knacken, backen, lieben."}),
+                (Locale.Spanish, new UnlockInfo{Name = "Pizza - Huevo", Description = "Añade huevo como ingrediente de la pizza", FlavourText = "Rómpelo, hornéalo, ámalo."}),
+                (Locale.Polish, new UnlockInfo{Name = "Pizza - Jajko", Description = "Dodaje jajko jako dodatek do pizzy", FlavourText = "Pęknij, upiecz, pokochaj."}),
+                (Locale.Russian, new UnlockInfo{Name = "Пицца - яйцо", Description = "Добавляет яйцо в качестве начинки для пиццы", FlavourText = "Раскалывайте, запекайте, любите."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "Pizza - Ovo", Description = "Adiciona ovo como cobertura de pizza", FlavourText = "Quebre-o, asse-o, ame-o."}),
+                (Locale.Japanese, new UnlockInfo{Name = "ピザ - 卵", Description = "ピザのトッピングに卵を加える", FlavourText = "割って、焼いて、愛して。"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "比萨 - 鸡蛋", Description = "添加鸡蛋作为披萨配料", FlavourText = "敲碎它，烘烤它，爱上它。"}),
+                (Locale.Korean, new UnlockInfo{Name = "피자 - 계란", Description = "피자 토핑으로 달걀을 추가합니다.", FlavourText = "깨고, 굽고, 사랑하세요."}),
+                (Locale.Turkish, new UnlockInfo{Name = "Pizza - Yumurta", Description = "Yumurtayı pizza malzemesi olarak ekler", FlavourText = "Kır, pişir, sev."}),
+            };
         }
 
 
@@ -196,6 +213,23 @@ namespace AussieClassics.Utilies
                 {Locale.ChineseSimplified, "将蛋白与蛋黄分离，打发蛋白，加入糖，再次打发蛋白"},
                 {Locale.Korean, "달걀 흰자와 노른자를 분리하고, 흰자를 휘저어 설탕을 넣고, 다시 흰자를 휘젓습니다."},
                 {Locale.Turkish, "Yumurta Aklarını Sarılarından Ayırın, Akları Çırpın, Şeker Ekleyin, Akları Tekrar Çırpın"},
+            };
+            
+            public static Dictionary<Locale, string> PizzaEgg => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Chop egg and add to pizza before cooking"},
+                {Locale.English, "Chop egg and add to pizza before cooking"},
+                {Locale.BlankText, ""},
+                {Locale.French, "Hacher l'œuf et l'ajouter à la pizza avant la cuisson"},
+                {Locale.German, "Ei hacken und vor dem Backen auf die Pizza geben"},
+                {Locale.Spanish, "Picar el huevo y añadirlo a la pizza antes de cocinarla"},
+                {Locale.Polish, "Posiekaj jajko i dodaj do pizzy przed gotowaniem"},
+                {Locale.Russian, "Порубите яйцо и добавьте в пиццу перед приготовлением"},
+                {Locale.PortugueseBrazil, "Pique o ovo e adicione-o à pizza antes do cozimento"},
+                {Locale.Japanese, "卵を刻んでピザに加える。"},
+                {Locale.ChineseSimplified, "鸡蛋切碎，在烹饪前加入比萨中"},
+                {Locale.Korean, "요리하기 전에 계란을 잘게 썰어 피자에 넣습니다."},
+                {Locale.Turkish, "Yumurtayı doğrayın ve pişirmeden önce pizzaya ekleyin"},
             };
         }
 

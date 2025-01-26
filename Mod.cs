@@ -5,11 +5,13 @@ using KitchenMods;
 using System.Linq;
 using System.Reflection;
 using AussieClassics.Utilities;
+using Kitchen;
 using KitchenData;
 using KitchenLib.Achievements;
 using KitchenLib.Event;
 using KitchenLib.Interfaces;
 using KitchenLib.References;
+using KitchenLib.Utils;
 using TMPro;
 using UnityEngine;
 using KitchenLogger = KitchenLib.Logging.KitchenLogger;
@@ -83,6 +85,7 @@ namespace AussieClassics
 
             Events.BuildGameDataEvent += (sender, args) =>
             {
+                if (!args.firstBuild) return;
                 if (args.gamedata.TryGet(ApplianceReferences.Countertop, out Appliance counter) && args.gamedata.TryGet(GDOReferences.VegemiteProvider.ID, out Appliance vegemiteProvider))
                 {
                     foreach (Appliance.ApplianceProcesses process in counter.Processes)
@@ -113,54 +116,77 @@ namespace AussieClassics
                 
                 if (args.gamedata.TryGet(ApplianceReferences.Mixer, out Appliance Mixer))
                 {
-                    bool found = false;
-                    foreach (Appliance.ApplianceProcesses process in Mixer.Processes)
+                    AddProcessToAppliance(Mixer, new Appliance.ApplianceProcesses
                     {
-                        if (process.Process == GDOReferences.Whisk)
-                        {
-                            found = true;
-                            break;
-                        }
-                    }
-
-                    if (!found)
-                    {
-                        Mixer.Processes.Add(new Appliance.ApplianceProcesses
-                        {
-                            Process = GDOReferences.Whisk,
-                            Speed = 1,
-                            Validity = ProcessValidity.Generic,
-                            IsAutomatic = true
-                        });
-                    }
+                        Process = GDOReferences.Whisk,
+                        Speed = 1,
+                        Validity = ProcessValidity.Generic,
+                        IsAutomatic = true
+                    });
                 }
 
                 if (args.gamedata.TryGet(ApplianceReferences.Hob, out Appliance Hob))
                 {
-                    bool found = false;
-                    foreach (Appliance.ApplianceProcesses process in Mixer.Processes)
+                    AddProcessToAppliance(Hob, new Appliance.ApplianceProcesses
                     {
-                        if (process.Process == GDOReferences.RequireHob)
-                        {
-                            found = true;
-                            break;
-                        }
-                    }
-
-                    if (!found)
-                    {
-                        Mixer.Processes.Add(new Appliance.ApplianceProcesses
-                        {
-                            Process = GDOReferences.RequireHob,
-                            Speed = 1,
-                            Validity = ProcessValidity.Generic,
-                            IsAutomatic = false
-                        });
-                    }
+                        Process = GDOReferences.RequireHob,
+                        Speed = 1,
+                        Validity = ProcessValidity.Generic,
+                        IsAutomatic = false
+                    });
                 }
+                
+                CustomPizzaIngredient.AddPizzaIngredientToPrefabs(args.gamedata,
+                    Bundle.LoadAsset<GameObject>("EggRaw").AssignMaterialsByNames(),
+                    GDOReferences.EggCracked,
+                    Bundle.LoadAsset<GameObject>("EggCooked").AssignMaterialsByNames(),
+                    GDOReferences.EggCooked,
+                    "E");
             };
 
             // RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
+        }
+
+        private void AddProcessToAppliance(Appliance appliance, Appliance.ApplianceProcesses process)
+        {
+            bool found = false;
+            foreach (Appliance.ApplianceProcesses x in appliance.Processes)
+            {
+                if (x.Process == process.Process)
+                {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                appliance.Processes.Add(process);
+            }
+        }
+
+        private static FieldInfo _Sets = ReflectionUtils.GetField<ItemGroup>("Sets");
+        private static FieldInfo _Processes = ReflectionUtils.GetField<Item>("Processes");
+        private static FieldInfo _ComponentLabels = ReflectionUtils.GetField<ItemGroupView>("ComponentLabels");
+        
+        private void AddProcessToItem(Item item, Item.ItemProcess process)
+        {
+            List<Item.ItemProcess> Processes = (List<Item.ItemProcess>)_Processes.GetValue(item);
+            bool found = false;
+            foreach (Item.ItemProcess x in Processes)
+            {
+                if (x.Process == process.Process)
+                {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                Processes.Add(process);
+                _Processes.SetValue(item, Processes);
+            }
         }
     }
 }

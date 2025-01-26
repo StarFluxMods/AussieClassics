@@ -40,6 +40,8 @@ namespace AussieClassics.Utilities
         #region Item
 
         public static Item Egg => (Item)GDOUtils.GetExistingGDO(ItemReferences.Egg);
+        public static Item EggCracked => (Item)GDOUtils.GetExistingGDO(ItemReferences.EggCracked);
+        public static Item EggCooked => (Item)GDOUtils.GetExistingGDO(ItemReferences.EggCooked);
         public static Item BreadToast => (Item)GDOUtils.GetExistingGDO(ItemReferences.BreadToast);
         public static Item BreadSlice => (Item)GDOUtils.GetExistingGDO(ItemReferences.BreadSlice);
         public static Item Butter => (Item)GDOUtils.GetExistingGDO(ItemReferences.Butter);
@@ -52,6 +54,12 @@ namespace AussieClassics.Utilities
         public static Item BigCakeTin => (Item)GDOUtils.GetExistingGDO(ItemReferences.BigCakeTin);
 
         #endregion
+        
+        #region ItemGroup
+        
+        public static ItemGroup PizzaPlated => (ItemGroup)GDOUtils.GetExistingGDO(ItemGroupReferences.PizzaPlated);
+        
+        #endregion
 
         #region Appliance
 
@@ -61,6 +69,12 @@ namespace AussieClassics.Utilities
         public static Appliance WallpaperApplicator => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.WallpaperApplicator);
         public static Appliance FlooringApplicator => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.FlooringApplicator);
 
+        #endregion
+        
+        #region Dish
+
+        public static Dish PizzaBase => (Dish)GDOUtils.GetExistingGDO(DishReferences.PizzaBase);
+        
         #endregion
 
         #endregion
