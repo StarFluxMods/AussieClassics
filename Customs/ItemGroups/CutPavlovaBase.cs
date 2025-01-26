@@ -22,6 +22,8 @@ namespace AussieClassics.Customs.ItemGroups
             GDOReferences.PavlovaSlice
         };
 
+        public override bool ApplyProcessesToComponents => true;
+
         public override List<ItemGroup.ItemSet> Sets => new List<ItemGroup.ItemSet>
         {
             new ItemGroup.ItemSet

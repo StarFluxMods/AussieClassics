@@ -12,31 +12,12 @@ namespace AussieClassics.Customs.ItemGroups
     {
         public override string UniqueNameID => "PavlovaSlice";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PavlovaSlice").AssignMaterialsByNames();
-        
-        public override List<ItemGroup.ItemSet> Sets => new List<ItemGroup.ItemSet>
+
+        public override List<IItemProperty> Properties => new List<IItemProperty>
         {
-            new ItemGroup.ItemSet
+            new CPreventItemMerge
             {
-                Items = new List<Item>
-                {
-                    GDOReferences.CookedPavlovaBase,
-                    GDOReferences.MashedPassionFruit,
-                },
-                Min = 2,
-                Max = 2,
-                IsMandatory = true
-            },
-            new ItemGroup.ItemSet
-            {
-                Items = new List<Item>
-                {
-                    GDOReferences.CutKiwiFruit,
-                    GDOReferences.ChoppedStrawberry
-                },
-                IsMandatory = false,
-                Min = 0,
-                Max = 2,
-                RequiresUnlock = true
+                Condition = MergeCondition.NoMerge
             }
         };
 
