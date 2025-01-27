@@ -53,6 +53,8 @@ namespace AussieClassics.Utilities
         public static Item Flour => (Item)GDOUtils.GetExistingGDO(ItemReferences.Flour);
         public static Item PlateDirty => (Item)GDOUtils.GetExistingGDO(ItemReferences.PlateDirty);
         public static Item BigCakeTin => (Item)GDOUtils.GetExistingGDO(ItemReferences.BigCakeTin);
+        public static Item ChocolateMelted => (Item)GDOUtils.GetExistingGDO(ItemReferences.ChocolateMelted);
+        public static Item Chocolate => (Item)GDOUtils.GetExistingGDO(ItemReferences.Chocolate);
 
         #endregion
 
@@ -117,6 +119,9 @@ namespace AussieClassics.Utilities
         public static Item BurnedPavlovaTin => (Item)GDOUtils.GetCustomGameDataObject<BurnedPavlovaTin>().GameDataObject;
         public static Item CookedPavlovaBase => (Item)GDOUtils.GetCustomGameDataObject<CookedPavlovaBase>().GameDataObject;
         public static Item CookedPavlovaTin => (Item)GDOUtils.GetCustomGameDataObject<CookedPavlovaTin>().GameDataObject;
+        public static Item CutWaferSheet => (Item)GDOUtils.GetCustomGameDataObject<CutWaferSheet>().GameDataObject;
+        public static Item TimTam => (Item)GDOUtils.GetCustomGameDataObject<TimTam>().GameDataObject;
+        public static Item WaferSheet => (Item)GDOUtils.GetCustomGameDataObject<WaferSheet>().GameDataObject;
 
         #endregion
 
@@ -130,6 +135,7 @@ namespace AussieClassics.Utilities
         public static ItemGroup PlatedVegemiteToast => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedVegemiteToast>().GameDataObject;
         public static ItemGroup RawPavlovaTin => (ItemGroup)GDOUtils.GetCustomGameDataObject<RawPavlovaTin>().GameDataObject;
         public static ItemGroup SugaredEggFoam => (ItemGroup)GDOUtils.GetCustomGameDataObject<SugaredEggFoam>().GameDataObject;
+        public static ItemGroup TimTams => (ItemGroup)GDOUtils.GetCustomGameDataObject<TimTams>().GameDataObject;
         public static ItemGroup VegemiteToast => (ItemGroup)GDOUtils.GetCustomGameDataObject<VegemiteToast>().GameDataObject;
 
         #endregion
@@ -157,6 +163,7 @@ namespace AussieClassics.Utilities
         public static Appliance RoughTerrainRight => (Appliance)GDOUtils.GetCustomGameDataObject<RoughTerrainRight>().GameDataObject;
         public static Appliance SprinklesProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SprinklesProvider>().GameDataObject;
         public static Appliance VegemiteProvider => (Appliance)GDOUtils.GetCustomGameDataObject<VegemiteProvider>().GameDataObject;
+        public static Appliance WaferProvider => (Appliance)GDOUtils.GetCustomGameDataObject<WaferProvider>().GameDataObject;
 
         #endregion
     }

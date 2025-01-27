@@ -108,6 +108,23 @@ namespace AussieClassics.Utilies
                 (Locale.Korean, new UnlockInfo{Name = "피자 - 계란", Description = "피자 토핑으로 달걀을 추가합니다.", FlavourText = "깨고, 굽고, 사랑하세요."}),
                 (Locale.Turkish, new UnlockInfo{Name = "Pizza - Yumurta", Description = "Yumurtayı pizza malzemesi olarak ekler", FlavourText = "Kır, pişir, sev."}),
             };
+            
+            public static List<(Locale, UnlockInfo)> TimTams => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo{Name = "TimTams", Description = "Adds TimTams as a Side", FlavourText = "Australia’s sweetest secret weapon."}),
+                (Locale.English, new UnlockInfo{Name = "TimTams", Description = "Adds TimTams as a Side", FlavourText = "Australia’s sweetest secret weapon."}),
+                (Locale.BlankText, new UnlockInfo{Name = "", Description = "", FlavourText = ""}),
+                (Locale.French, new UnlockInfo{Name = "TimTams", Description = "Ajoute les TimTams en accompagnement", FlavourText = "L'arme secrète la plus douce d'Australie."}),
+                (Locale.German, new UnlockInfo{Name = "TimTams", Description = "Fügt TimTams als Beilage hinzu", FlavourText = "Australiens süßeste Geheimwaffe."}),
+                (Locale.Spanish, new UnlockInfo{Name = "TimTams", Description = "Añade TimTams como complemento", FlavourText = "El arma secreta más dulce de Australia."}),
+                (Locale.Polish, new UnlockInfo{Name = "TimTams", Description = "Dodaje TimTams jako dodatek", FlavourText = "Najsłodsza tajna broń Australii."}),
+                (Locale.Russian, new UnlockInfo{Name = "ТимТамс", Description = "Добавляет ТимТамс в качестве гарнира", FlavourText = "Самое сладкое секретное оружие Австралии."}),
+                (Locale.PortugueseBrazil, new UnlockInfo{Name = "TimTams", Description = "Adiciona TimTams como acompanhamento", FlavourText = "A arma secreta mais doce da Austrália."}),
+                (Locale.Japanese, new UnlockInfo{Name = "ティムタム", Description = "サイドメニューにティムタムを追加", FlavourText = "オーストラリアの甘い秘密兵器"}),
+                (Locale.ChineseSimplified, new UnlockInfo{Name = "TimTams", Description = "添加 TimTams 作为配菜", FlavourText = "澳大利亚最甜蜜的秘密武器"}),
+                (Locale.Korean, new UnlockInfo{Name = "팀탐스", Description = "팀탐스를 사이드 메뉴로 추가", FlavourText = "호주에서 가장 달콤한 비밀병기."}),
+                (Locale.Turkish, new UnlockInfo{Name = "TimTams", Description = "TimTams'ı Yan Ürün Olarak Ekler", FlavourText = "Avustralya'nın en tatlı gizli silahı."}),
+            };
         }
 
 
@@ -231,6 +248,23 @@ namespace AussieClassics.Utilies
                 {Locale.Korean, "요리하기 전에 계란을 잘게 썰어 피자에 넣습니다."},
                 {Locale.Turkish, "Yumurtayı doğrayın ve pişirmeden önce pizzaya ekleyin"},
             };
+            
+            public static Dictionary<Locale, string> TimTams => new Dictionary<Locale, string>
+            {
+                {Locale.Default, "Chop Wafer Sheets, melt and add Chocolate, and portion."},
+                {Locale.English, "Chop Wafer Sheets, melt and add Chocolate, and portion."},
+                {Locale.BlankText, ""},
+                {Locale.French, "Hacher les gaufrettes, les faire fondre et ajouter le chocolat, puis les répartir."},
+                {Locale.German, "Waffelblätter zerkleinern, Schokolade schmelzen, dazugeben und portionieren."},
+                {Locale.Spanish, "Picar las Hojas de Oblea, derretir y añadir el Chocolate, y porcionar."},
+                {Locale.Polish, "Pokroić wafelki, roztopić, dodać czekoladę i porcjować."},
+                {Locale.Russian, "Нарежьте вафельные листы, растопите и добавьте шоколад, разделите на порции."},
+                {Locale.PortugueseBrazil, "Pique as folhas de wafer, derreta e acrescente o chocolate e distribua."},
+                {Locale.Japanese, "ウエハースシートを刻み、チョコレートを溶かして加える。"},
+                {Locale.ChineseSimplified, "将威化片切碎，融化并加入巧克力，然后分装。"},
+                {Locale.Korean, "웨이퍼 시트를 잘게 자르고 초콜릿을 녹여 추가한 후 나누어줍니다."},
+                {Locale.Turkish, "Gofret Yapraklarını doğrayın, eritin ve Çikolata ekleyin ve porsiyonlayın."},
+            };
         }
 
         public static class Appliances
@@ -301,6 +335,23 @@ namespace AussieClassics.Utilies
                 (Locale.ChineseSimplified, new ApplianceInfo{Name = "猕猴桃", Description = "提供猕猴桃"}),
                 (Locale.Korean, new ApplianceInfo{Name = "키위 과일", Description = "키위 과일 제공"}),
                 (Locale.Turkish, new ApplianceInfo{Name = "Kivi Meyvesi", Description = "Kivi Meyvesi Sağlar"}),
+            };
+            
+            public static List<(Locale, ApplianceInfo)> WaferProvider => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo{Name = "Wafers", Description = "Provides Wafers"}),
+                (Locale.English, new ApplianceInfo{Name = "Wafers", Description = "Provides Wafers"}),
+                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
+                (Locale.French, new ApplianceInfo{Name = "Plaquettes", Description = "Fournit des gaufres"}),
+                (Locale.German, new ApplianceInfo{Name = "Waffeln", Description = "Bietet Waffeln"}),
+                (Locale.Spanish, new ApplianceInfo{Name = "Obleas", Description = "Proporciona barquillos"}),
+                (Locale.Polish, new ApplianceInfo{Name = "Wafle", Description = "Zapewnia Wafle"}),
+                (Locale.Russian, new ApplianceInfo{Name = "Пластины", Description = "Предоставляет пластины"}),
+                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Wafers", Description = "Fornece wafers"}),
+                (Locale.Japanese, new ApplianceInfo{Name = "ウエハース", Description = "ウェハーを提供"}),
+                (Locale.ChineseSimplified, new ApplianceInfo{Name = "晶圆", Description = "提供晶片"}),
+                (Locale.Korean, new ApplianceInfo{Name = "웨이퍼", Description = "웨이퍼 제공"}),
+                (Locale.Turkish, new ApplianceInfo{Name = "Gofretler", Description = "Gofret Sağlar"}),
             };
         }
 

@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8005484785655021502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3673633837209867340}
+  m_Layer: 0
+  m_Name: CutWaferSheet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3673633837209867340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8005484785655021502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5848716831907373261}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6242105107699369766
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3673633837209867340}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.38796157
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.38796157
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38796157
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.033
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0061204
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2694393854158950470, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 77c09011b5dfa9f4ebf75579d598cc4f, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_Name
+      value: CutWafer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7416704389102499757, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+--- !u!4 &5848716831907373261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0bee3f211d162bf4b96fc43592617cad, type: 3}
+  m_PrefabInstance: {fileID: 6242105107699369766}
+  m_PrefabAsset: {fileID: 0}

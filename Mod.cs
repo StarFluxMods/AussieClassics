@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using KitchenLib;
 using KitchenLib.Logging.Exceptions;
 using KitchenMods;
@@ -46,6 +47,7 @@ namespace AussieClassics
         internal static readonly string ACHIEVEMENT_BURN_PAVLOVA = "ACHIEVEMENT_BURN_PAVLOVA";
         internal static readonly string ACHIEVEMENT_OUTBACK_SETTING = "ACHIEVEMENT_OUTBACK_SETTING";
         internal static readonly string ACHIEVEMENT_EGG_PIZZA = "ACHIEVEMENT_EGG_PIZZA";
+        internal static readonly string ACHIEVEMENT_TIMTAM_SMASH = "ACHIEVEMENT_TIMTAM_SMASH";
 
         internal static AssetBundle Bundle;
         internal static KitchenLogger Logger;
@@ -73,6 +75,7 @@ namespace AussieClassics
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_BURN_PAVLOVA, "Careful it's delicate!", "Burn a Pavlova", Bundle.LoadAsset<Texture2D>("AchievementBurnPavlovaIcon")));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_OUTBACK_SETTING, "Not an ideal location.", "Open a restaurant with the Outback setting", Bundle.LoadAsset<Texture2D>("AchievementOutbackIcon")));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_EGG_PIZZA, "Old Classic", "Serve an Egg on a Pizza", Bundle.LoadAsset<Texture2D>("PizzaEggIcon")));
+            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_TIMTAM_SMASH, "Tim Tam Smash", "Serve a Tim Tam and Coffee to the same customer", Bundle.LoadAsset<Texture2D>("AchievementTimTamSmashIcon")));
             achievementsManager.Load();
             achievementsManager.Save();
             
@@ -144,7 +147,7 @@ namespace AussieClassics
                     "E");
             };
 
-            // RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
+            //RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
         }
 
         private void AddProcessToAppliance(Appliance appliance, Appliance.ApplianceProcesses process)
