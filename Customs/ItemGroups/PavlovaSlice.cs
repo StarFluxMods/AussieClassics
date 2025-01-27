@@ -20,6 +20,33 @@ namespace AussieClassics.Customs.ItemGroups
                 Condition = MergeCondition.NoMerge
             }
         };
+        
+        public override List<ItemGroup.ItemSet> Sets => new List<ItemGroup.ItemSet>
+        {
+            new ItemGroup.ItemSet
+            {
+                Items = new List<Item>
+                {
+                    GDOReferences.CookedPavlovaBase,
+                    GDOReferences.MashedPassionFruit,
+                },
+                Min = 2,
+                Max = 2,
+                IsMandatory = true
+            },
+            new ItemGroup.ItemSet
+            {
+                Items = new List<Item>
+                {
+                    GDOReferences.CutKiwiFruit,
+                    GDOReferences.ChoppedStrawberry
+                },
+                IsMandatory = false,
+                Min = 0,
+                Max = 2,
+                RequiresUnlock = true
+            }
+        };
 
         public override List<ItemGroupView.ColourBlindLabel> Labels => new List<ItemGroupView.ColourBlindLabel>
         {

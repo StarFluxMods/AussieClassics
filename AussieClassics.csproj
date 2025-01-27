@@ -20,6 +20,7 @@
 		<Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.Items" />
 		<Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.DisplayedItems" />
 		<Publicize Include="Kitchen.Common:Kitchen.CItemProvider.Item" />
+		<Publicize Include="Kitchen.RestaurantMode:Kitchen.ProvideStartingEnvelopes+SProvided" />
 	</ItemGroup>
 	
 	<ItemGroup>
@@ -30,6 +31,5 @@
 	<ItemGroup>
 		<Folder Condition="Exists('Changelogs')" Include="Changelogs\" />
 		<Folder Condition="Exists('Changelogs\Github')" Include="Changelogs\Github" />
-		<Folder Condition="Exists('Changelogs\Workshop')" Include="Changelogs\Workshop" />
 	</ItemGroup>
 </Project>

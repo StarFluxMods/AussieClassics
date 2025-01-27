@@ -39,7 +39,7 @@ namespace AussieClassics.Customs.Dishes
             GDOReferences.Chop
         };
 
-        public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("PavlovaToppingsIcon").AssignMaterialsByNames();
+        public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("PizzaEggIcon").AssignMaterialsByNames();
 
         public override HashSet<Dish.IngredientUnlock> IngredientsUnlocks => new HashSet<Dish.IngredientUnlock>
         {

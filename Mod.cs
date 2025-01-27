@@ -37,14 +37,15 @@ namespace AussieClassics
     {
         public const string MOD_GUID = "com.starfluxgames.aussieclassics";
         public const string MOD_NAME = "Aussie Classics";
-        public const string MOD_VERSION = "0.1.0";
+        public const string MOD_VERSION = "0.1.1";
         public const string MOD_AUTHOR = "StarFluxGames";
         public const string MOD_GAMEVERSION = ">=1.2.0";
 
         public static bool ENABLE_ADDITIONAL_LOBBY_DISHES = false;
         
         internal static readonly string ACHIEVEMENT_BURN_PAVLOVA = "ACHIEVEMENT_BURN_PAVLOVA";
-        internal static readonly string ACHIEVEMENT_TIM_TAM_COFFEE = "ACHIEVEMENT_TIM_TAM_COFFEE";
+        internal static readonly string ACHIEVEMENT_OUTBACK_SETTING = "ACHIEVEMENT_OUTBACK_SETTING";
+        internal static readonly string ACHIEVEMENT_EGG_PIZZA = "ACHIEVEMENT_EGG_PIZZA";
 
         internal static AssetBundle Bundle;
         internal static KitchenLogger Logger;
@@ -68,13 +69,12 @@ namespace AussieClassics
             Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).FirstOrDefault() ?? throw new MissingAssetBundleException(MOD_GUID);
             Logger = InitLogger();
             
-            /*
             achievementsManager = new AchievementsManager(MOD_GUID, MOD_NAME);
-            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_BURN_PAVLOVA, "How'd you manage that?", "Burn a Pavlova", null));
-            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_TIM_TAM_COFFEE, "Old Classic", "Serve a Tim Tam and a Coffee to the same Customer", null));
+            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_BURN_PAVLOVA, "Careful it's delicate!", "Burn a Pavlova", Bundle.LoadAsset<Texture2D>("AchievementBurnPavlovaIcon")));
+            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_OUTBACK_SETTING, "Not an ideal location.", "Open a restaurant with the Outback setting", Bundle.LoadAsset<Texture2D>("AchievementOutbackIcon")));
+            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_EGG_PIZZA, "Old Classic", "Serve an Egg on a Pizza", Bundle.LoadAsset<Texture2D>("PizzaEggIcon")));
             achievementsManager.Load();
             achievementsManager.Save();
-            */
             
             Bundle.LoadAllAssets<Texture2D>();
             Bundle.LoadAllAssets<Sprite>();
