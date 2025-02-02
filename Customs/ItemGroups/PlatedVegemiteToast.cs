@@ -47,6 +47,15 @@ namespace AussieClassics.Customs.ItemGroups
                 RequiresUnlock = true
             }
         };
+        
+        public override List<ItemGroupView.ColourBlindLabel> Labels => new List<ItemGroupView.ColourBlindLabel>
+        {
+            new ItemGroupView.ColourBlindLabel
+            {
+                Item = GDOReferences.CheeseGrated,
+                Text = "C"
+            }
+        };
 
         public override ItemValue ItemValue => ItemValue.Small;
         

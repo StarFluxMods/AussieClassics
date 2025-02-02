@@ -18,11 +18,19 @@ namespace AussieClassics.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    GDOReferences.BreadToast,
+                    GDOReferences.BreadToast
+                },
+                Min = 1,
+                Max = 1,
+            },
+            new ItemGroup.ItemSet
+            {
+                Items = new List<Item>
+                {
                     GDOReferences.Vegemite
                 },
-                Min = 2,
-                Max = 2,
+                Min = 1,
+                Max = 1
             },
             new ItemGroup.ItemSet
             {
@@ -34,7 +42,9 @@ namespace AussieClassics.Customs.ItemGroups
                 Max = 1,
                 RequiresUnlock = true
             }
-        };public override List<ItemGroupView.ColourBlindLabel> Labels => new List<ItemGroupView.ColourBlindLabel>
+        };
+        
+        public override List<ItemGroupView.ColourBlindLabel> Labels => new List<ItemGroupView.ColourBlindLabel>
         {
             new ItemGroupView.ColourBlindLabel
             {
@@ -55,6 +65,16 @@ namespace AussieClassics.Customs.ItemGroups
                     {
                         Item = GDOReferences.CheeseGrated,
                         GameObject = gameDataObject.Prefab.GetChild("VegemiteToast/Cheese")
+                    },
+                    new()
+                    {
+                        Item = GDOReferences.Vegemite,
+                        GameObject = gameDataObject.Prefab.GetChild("VegemiteToast/Vegemite")
+                    },
+                    new()
+                    {
+                        Item = GDOReferences.BreadToast,
+                        GameObject = gameDataObject.Prefab.GetChild("VegemiteToast/Toast")
                     }
                 };
             }

@@ -26,7 +26,8 @@ namespace AussieClassics.Customs.ItemGroups
             {
                 Process = GDOReferences.Cook,
                 Duration = 0.5f,
-                Result = GDOReferences.BurnedPavlovaTin
+                Result = GDOReferences.BurnedPavlovaTin,
+                IsBad = true
             }
         };
     }

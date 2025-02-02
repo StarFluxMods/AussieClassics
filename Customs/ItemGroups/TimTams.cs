@@ -4,12 +4,13 @@ using AussieClassics.Customs.Generic;
 using AussieClassics.Utilities;
 using Kitchen;
 using KitchenData;
+using KitchenLib.Customs;
 using KitchenLib.Utils;
 using UnityEngine;
 
 namespace AussieClassics.Customs.ItemGroups
 {
-    public class TimTams : GenericStackableItemGroup
+    public class TimTams : CustomItemGroup
     {
         public override string UniqueNameID => "TimTams";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("TimTams").AssignMaterialsByNames();

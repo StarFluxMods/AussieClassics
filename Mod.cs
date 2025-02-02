@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
 using KitchenLib;
 using KitchenLib.Logging.Exceptions;
 using KitchenMods;
@@ -20,25 +19,24 @@ using KitchenLogger = KitchenLib.Logging.KitchenLogger;
 namespace AussieClassics
 {
     // https://www.flaticon.com/free-icon/whisk_184490 - Wisk Icon
-    // https://sketchfab.com/3d-models/low-poly-kangaroo-31950174017f4fdc8ec7ade267da7c2f - Kangaroo
+    // https://iconduck.com/icons/23723/kangaroo - Kangaroo
+    // https://sketchfab.com/3d-models/low-poly-koala-532dc677e7874507a71faae71263a44d - Koala
     
     // TODO : Snake in Sink Animation
     // TODO : Kangaroo Model & Animation
     
-    // TODO : Tim Tams
     // TODO : Lamington
     // TODO : Fish & Chips
     // TODO : VB
     
     // TODO : Cosmetics
-    // TODO : Achievements
     // TODO : Decor
     
     public class Mod : BaseMod, IModSystem, IAutoRegisterAll
     {
         public const string MOD_GUID = "com.starfluxgames.aussieclassics";
         public const string MOD_NAME = "Aussie Classics";
-        public const string MOD_VERSION = "0.1.1";
+        public const string MOD_VERSION = "0.1.2";
         public const string MOD_AUTHOR = "StarFluxGames";
         public const string MOD_GAMEVERSION = ">=1.2.0";
 
@@ -75,7 +73,7 @@ namespace AussieClassics
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_BURN_PAVLOVA, "Careful it's delicate!", "Burn a Pavlova", Bundle.LoadAsset<Texture2D>("AchievementBurnPavlovaIcon")));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_OUTBACK_SETTING, "Not an ideal location.", "Open a restaurant with the Outback setting", Bundle.LoadAsset<Texture2D>("AchievementOutbackIcon")));
             achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_EGG_PIZZA, "Old Classic", "Serve an Egg on a Pizza", Bundle.LoadAsset<Texture2D>("PizzaEggIcon")));
-            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_TIMTAM_SMASH, "Tim Tam Smash", "Serve a Tim Tam and Coffee to the same customer", Bundle.LoadAsset<Texture2D>("AchievementTimTamSmashIcon")));
+            achievementsManager.RegisterAchievement(new Achievement(ACHIEVEMENT_TIMTAM_SMASH, "Tim Tam Slam", "Serve a Tim Tam and Coffee to the same customer", Bundle.LoadAsset<Texture2D>("AchievementTimTamSmashIcon")));
             achievementsManager.Load();
             achievementsManager.Save();
             

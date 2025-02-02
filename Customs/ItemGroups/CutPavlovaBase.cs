@@ -4,12 +4,13 @@ using AussieClassics.Customs.Generic;
 using AussieClassics.Utilities;
 using Kitchen;
 using KitchenData;
+using KitchenLib.Customs;
 using KitchenLib.Utils;
 using UnityEngine;
 
 namespace AussieClassics.Customs.ItemGroups
 {
-    public class CutPavlovaBase : GenericStackableItemGroup
+    public class CutPavlovaBase : CustomItemGroup
     {
         public override string UniqueNameID => "CutPavlovaBase";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("CutPavlovaBase").AssignMaterialsByNames();
