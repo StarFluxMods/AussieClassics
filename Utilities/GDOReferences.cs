@@ -122,6 +122,9 @@ namespace AussieClassics.Utilities
         public static Item CutWaferSheet => (Item)GDOUtils.GetCustomGameDataObject<CutWaferSheet>().GameDataObject;
         public static Item TimTam => (Item)GDOUtils.GetCustomGameDataObject<TimTam>().GameDataObject;
         public static Item WaferSheet => (Item)GDOUtils.GetCustomGameDataObject<WaferSheet>().GameDataObject;
+        public static Item VBCan => (Item)GDOUtils.GetCustomGameDataObject<VBCan>().GameDataObject;
+        public static Item OpenVBCan => (Item)GDOUtils.GetCustomGameDataObject<OpenVBCan>().GameDataObject;
+        public static Item Shoe => (Item)GDOUtils.GetCustomGameDataObject<Shoe>().GameDataObject;
 
         #endregion
 
@@ -164,6 +167,7 @@ namespace AussieClassics.Utilities
         public static Appliance SprinklesProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SprinklesProvider>().GameDataObject;
         public static Appliance VegemiteProvider => (Appliance)GDOUtils.GetCustomGameDataObject<VegemiteProvider>().GameDataObject;
         public static Appliance WaferProvider => (Appliance)GDOUtils.GetCustomGameDataObject<WaferProvider>().GameDataObject;
+        public static Appliance VBProvider => (Appliance)GDOUtils.GetCustomGameDataObject<VBProvider>().GameDataObject;
 
         #endregion
     }
