@@ -15,6 +15,6 @@ namespace AussieClassics.Customs.Appliances
 
         public override Item ProvidedItem => GDOReferences.VBCan;
 
-        // public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.PassionFruitProvider;
+        public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.VBProvider;
     }
 }

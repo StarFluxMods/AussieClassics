@@ -21,16 +21,15 @@ namespace AussieClassics
     // https://www.flaticon.com/free-icon/whisk_184490 - Wisk Icon
     // https://iconduck.com/icons/23723/kangaroo - Kangaroo
     // https://sketchfab.com/3d-models/low-poly-koala-532dc677e7874507a71faae71263a44d - Koala
+    // https://www.svgrepo.com/svg/481361/crocodile-4 - Crocodile
     
     // TODO : Snake in Sink Animation
     // TODO : Kangaroo Model & Animation
     
     // TODO : Lamington
     // TODO : Fish & Chips
-    // TODO : VB
     
     // TODO : Cosmetics
-    // TODO : Decor
     
     public class Mod : BaseMod, IModSystem, IAutoRegisterAll
     {
@@ -125,6 +124,28 @@ namespace AussieClassics
                         IsAutomatic = true
                     });
                 }
+                
+                if (args.gamedata.TryGet(ApplianceReferences.MixerPusher, out Appliance MixerPusher))
+                {
+                    AddProcessToAppliance(MixerPusher, new Appliance.ApplianceProcesses
+                    {
+                        Process = GDOReferences.Whisk,
+                        Speed = 1,
+                        Validity = ProcessValidity.Generic,
+                        IsAutomatic = true
+                    });
+                }
+                
+                if (args.gamedata.TryGet(ApplianceReferences.MixerRapid, out Appliance MixerRapid))
+                {
+                    AddProcessToAppliance(MixerRapid, new Appliance.ApplianceProcesses
+                    {
+                        Process = GDOReferences.Whisk,
+                        Speed = 1,
+                        Validity = ProcessValidity.Generic,
+                        IsAutomatic = true
+                    });
+                }
 
                 if (args.gamedata.TryGet(ApplianceReferences.Hob, out Appliance Hob))
                 {
@@ -145,7 +166,7 @@ namespace AussieClassics
                     "E");
             };
 
-            //RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
+            // RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
         }
 
         private void AddProcessToAppliance(Appliance appliance, Appliance.ApplianceProcesses process)

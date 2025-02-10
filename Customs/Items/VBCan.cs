@@ -17,7 +17,7 @@ namespace AussieClassics.Customs.Items
         {
             new Item.ItemProcess
             {
-                Process = GDOReferences.Cook,
+                Process = GDOReferences.Knead,
                 Duration = 0.1f,
                 Result = GDOReferences.OpenVBCan
             }

@@ -24,7 +24,7 @@ namespace AussieClassics.Customs.Appliances
         public override bool IsPurchasable => false;
         public override PriceTier PriceTier => PriceTier.Free;
         public override ShoppingTags ShoppingTags => ShoppingTags.Decoration;
-        public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.KangarooSign;
+        public override List<(Locale, ApplianceInfo)> InfoList => CenteralLang.Appliances.KoalaBranch;
 
         public override void OnRegister(Appliance gameDataObject)
         {

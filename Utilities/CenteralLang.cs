@@ -125,6 +125,23 @@ namespace AussieClassics.Utilies
                 (Locale.Korean, new UnlockInfo { Name = "팀탐스", Description = "팀탐스를 사이드 메뉴로 추가", FlavourText = "호주에서 가장 달콤한 비밀병기." }),
                 (Locale.Turkish, new UnlockInfo { Name = "TimTams", Description = "TimTams'ı Yan Ürün Olarak Ekler", FlavourText = "Avustralya'nın en tatlı gizli silahı." }),
             };
+
+            public static List<(Locale, UnlockInfo)> Shoey => new List<(Locale, UnlockInfo)>
+            {
+                (Locale.Default, new UnlockInfo { Name = "Shoey", Description = "Adds Shoeys as a Side", FlavourText = "When a cup just isn’t Aussie enough." }),
+                (Locale.English, new UnlockInfo { Name = "Shoey", Description = "Adds Shoeys as a Side", FlavourText = "When a cup just isn’t Aussie enough." }),
+                (Locale.BlankText, new UnlockInfo { Name = "", Description = "", FlavourText = "" }),
+                (Locale.French, new UnlockInfo { Name = "Shoey", Description = "Ajoute Shoeys comme côté", FlavourText = "Quand une tasse n'est pas assez australienne." }),
+                (Locale.German, new UnlockInfo { Name = "Shoey", Description = "Fügt Shoeys als Seite hinzu", FlavourText = "Wenn eine Tasse einfach nicht australisch genug ist." }),
+                (Locale.Spanish, new UnlockInfo { Name = "Shoey", Description = "Añade Shoeys como bando", FlavourText = "Cuando una taza no es lo suficientemente australiana." }),
+                (Locale.Polish, new UnlockInfo { Name = "Shoey", Description = "Dodaje Shoeys jako stronę poboczną", FlavourText = "Kiedy kubek nie jest wystarczająco australijski." }),
+                (Locale.Russian, new UnlockInfo { Name = "Shoey", Description = "Добавляет Шойса в качестве сайда", FlavourText = "Когда чашка просто недостаточно австралийская." }),
+                (Locale.PortugueseBrazil, new UnlockInfo { Name = "Sapato", Description = "Adiciona Shoeys como um lado", FlavourText = "Quando uma xícara não é suficientemente australiana." }),
+                (Locale.Japanese, new UnlockInfo { Name = "シューイ", Description = "サイドにショーイを加える", FlavourText = "カップだけではオージーらしくないとき。" }),
+                (Locale.ChineseSimplified, new UnlockInfo { Name = "Shoey", Description = "添加 Shoeys 为副队", FlavourText = "当杯子不够澳式时" }),
+                (Locale.Korean, new UnlockInfo { Name = "Shoey", Description = "슈즈를 측면으로 추가", FlavourText = "한 잔으로 충분하지 않을 때." }),
+                (Locale.Turkish, new UnlockInfo { Name = "Shoey", Description = "Shoeys'i Taraf Olarak Ekliyor", FlavourText = "Bir fincan yeterince Avustralyalı olmadığında." }),
+            };
         }
 
 
@@ -217,19 +234,19 @@ namespace AussieClassics.Utilies
 
             public static Dictionary<Locale, string> Meringue => new Dictionary<Locale, string>
             {
-                { Locale.Default, "Separate Egg Whites from Yolks, Whisk Whites, add Sugar, Whisk Whites again" },
-                { Locale.English, "Separate Egg Whites from Yolks, Whisk Whites, add Sugar, Whisk Whites again" },
+                { Locale.Default, "Separate Egg Whites from Yolks, Whisk Whites in a Mixer, add Sugar, Whisk Whites again" },
+                { Locale.English, "Separate Egg Whites from Yolks, Whisk Whites in a Mixer, add Sugar, Whisk Whites again" },
                 { Locale.BlankText, "" },
-                { Locale.French, "Séparer les blancs des jaunes d'œufs, fouetter les blancs, ajouter le sucre, fouetter à nouveau les blancs." },
-                { Locale.German, "Eiweiß vom Eigelb trennen, Eiweiß aufschlagen, Zucker hinzufügen, Eiweiß erneut aufschlagen" },
-                { Locale.Spanish, "Separe las claras de las yemas, bata las claras, añada el azúcar y vuelva a batir las claras." },
-                { Locale.Polish, "Oddzielić białka od żółtek, ubić białka, dodać cukier, ponownie ubić białka." },
-                { Locale.Russian, "Отделите яичные белки от желтков, взбейте белки, добавьте сахар, снова взбейте белки." },
-                { Locale.PortugueseBrazil, "Separe as claras das gemas, bata as claras, adicione o açúcar e bata as claras novamente" },
-                { Locale.Japanese, "卵黄と卵白を分け、卵白を泡立て、砂糖を加え、再び卵白を泡立てる。" },
-                { Locale.ChineseSimplified, "将蛋白与蛋黄分离，打发蛋白，加入糖，再次打发蛋白" },
-                { Locale.Korean, "달걀 흰자와 노른자를 분리하고, 흰자를 휘저어 설탕을 넣고, 다시 흰자를 휘젓습니다." },
-                { Locale.Turkish, "Yumurta Aklarını Sarılarından Ayırın, Akları Çırpın, Şeker Ekleyin, Akları Tekrar Çırpın" },
+                { Locale.French, "Séparer les blancs des jaunes d'œufs, battre les blancs au mixeur, ajouter le sucre, battre à nouveau les blancs." },
+                { Locale.German, "Eiweiß vom Eigelb trennen, Eiweiß in einem Mixer aufschlagen, Zucker hinzufügen, Eiweiß erneut aufschlagen" },
+                { Locale.Spanish, "Separe las claras de las yemas, bata las claras en la batidora, añada el azúcar y vuelva a batir las claras." },
+                { Locale.Polish, "Oddziel białka od żółtek, ubij białka w mikserze, dodaj cukier, ponownie ubij białka." },
+                { Locale.Russian, "Отделите яичные белки от желтков, взбейте белки в миксере, добавьте сахар, снова взбейте белки." },
+                { Locale.PortugueseBrazil, "Separe as claras das gemas, bata as claras em uma batedeira, adicione o açúcar e bata as claras novamente" },
+                { Locale.Japanese, "卵黄と卵白を分け、卵白をミキサーで泡立て、砂糖を加え、再び卵白を泡立てる。" },
+                { Locale.ChineseSimplified, "将蛋白与蛋黄分离，在搅拌机中搅打蛋白，加入糖，再次搅打蛋白" },
+                { Locale.Korean, "달걀 흰자와 노른자를 분리하고 믹서에서 흰자를 휘저은 다음 설탕을 넣고 다시 휘저어줍니다." },
+                { Locale.Turkish, "Yumurta Aklarını Sarılarından Ayırın, Akları Mikserde Çırpın, Şeker Ekleyin, Akları Tekrar Çırpın" },
             };
 
             public static Dictionary<Locale, string> PizzaEgg => new Dictionary<Locale, string>
@@ -264,6 +281,23 @@ namespace AussieClassics.Utilies
                 { Locale.ChineseSimplified, "将威化片切碎，融化并加入巧克力，然后分装。" },
                 { Locale.Korean, "웨이퍼 시트를 잘게 자르고 초콜릿을 녹여 추가한 후 나누어줍니다." },
                 { Locale.Turkish, "Gofret Yapraklarını doğrayın, eritin ve Çikolata ekleyin ve porsiyonlayın." },
+            };
+
+            public static Dictionary<Locale, string> Shoey => new Dictionary<Locale, string>
+            {
+                { Locale.Default, "Crack open a can of VB and put it in a shoe." },
+                { Locale.English, "Crack open a can of VB and put it in a shoe." },
+                { Locale.BlankText, "" },
+                { Locale.French, "Ouvrez une boîte de VB et mettez-la dans une chaussure." },
+                { Locale.German, "Öffnen Sie eine Dose VB und stecken Sie sie in einen Schuh." },
+                { Locale.Spanish, "Abre una lata de VB y métela en un zapato." },
+                { Locale.Polish, "Otwórz puszkę VB i włóż ją do buta." },
+                { Locale.Russian, "Вскройте банку VB и положите ее в ботинок." },
+                { Locale.PortugueseBrazil, "Abra uma lata de VB e coloque-a em um sapato." },
+                { Locale.Japanese, "VBの缶を割って靴に入れる。" },
+                { Locale.ChineseSimplified, "打开一罐 VB，把它放进鞋子里。" },
+                { Locale.Korean, "VB 캔을 뜯어 신발에 넣습니다." },
+                { Locale.Turkish, "Bir kutu VB aç ve ayakkabının içine koy." },
             };
         }
 
@@ -353,22 +387,124 @@ namespace AussieClassics.Utilies
                 (Locale.Korean, new ApplianceInfo { Name = "웨이퍼", Description = "웨이퍼 제공" }),
                 (Locale.Turkish, new ApplianceInfo { Name = "Gofretler", Description = "Gofret Sağlar" }),
             };
-            
+
             public static List<(Locale, ApplianceInfo)> KangarooSign => new List<(Locale, ApplianceInfo)>
             {
-                (Locale.Default, new ApplianceInfo{Name = "Kangaroo Sign", Description = "They were here before roads were."}),
-                (Locale.English, new ApplianceInfo{Name = "Kangaroo Sign", Description = "They were here before roads were."}),
-                (Locale.BlankText, new ApplianceInfo{Name = "", Description = ""}),
-                (Locale.French, new ApplianceInfo{Name = "Panneau Kangourou", Description = "Ils étaient là avant que les routes n'existent."}),
-                (Locale.German, new ApplianceInfo{Name = "Känguru-Schild", Description = "Sie waren schon da, bevor es Straßen gab."}),
-                (Locale.Spanish, new ApplianceInfo{Name = "Señal de canguro", Description = "Estaban aquí antes que las carreteras."}),
-                (Locale.Polish, new ApplianceInfo{Name = "Znak kangura", Description = "Były tu wcześniej niż drogi."}),
-                (Locale.Russian, new ApplianceInfo{Name = "Знак кенгуру", Description = "Они появились здесь раньше, чем дороги."}),
-                (Locale.PortugueseBrazil, new ApplianceInfo{Name = "Sinal de Canguru", Description = "Eles já estavam aqui antes das estradas."}),
-                (Locale.Japanese, new ApplianceInfo{Name = "カンガルー・サイン", Description = "道路ができる前からここにあった。"}),
-                (Locale.ChineseSimplified, new ApplianceInfo{Name = "袋鼠标志", Description = "在公路出现之前，它们就已经在这里了。"}),
-                (Locale.Korean, new ApplianceInfo{Name = "캥거루 사인", Description = "그들은 도로가 생기기 전부터 이곳에 있었습니다."}),
-                (Locale.Turkish, new ApplianceInfo{Name = "Kanguru İşareti", Description = "Yollar olmadan önce buradaydılar."}),
+                (Locale.Default, new ApplianceInfo { Name = "Kangaroo Sign", Description = "They were here before roads were." }),
+                (Locale.English, new ApplianceInfo { Name = "Kangaroo Sign", Description = "They were here before roads were." }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "Panneau Kangourou", Description = "Ils étaient là avant que les routes n'existent." }),
+                (Locale.German, new ApplianceInfo { Name = "Känguru-Schild", Description = "Sie waren schon da, bevor es Straßen gab." }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Señal de canguro", Description = "Estaban aquí antes que las carreteras." }),
+                (Locale.Polish, new ApplianceInfo { Name = "Znak kangura", Description = "Były tu wcześniej niż drogi." }),
+                (Locale.Russian, new ApplianceInfo { Name = "Знак кенгуру", Description = "Они появились здесь раньше, чем дороги." }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Sinal de Canguru", Description = "Eles já estavam aqui antes das estradas." }),
+                (Locale.Japanese, new ApplianceInfo { Name = "カンガルー・サイン", Description = "道路ができる前からここにあった。" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "袋鼠标志", Description = "在公路出现之前，它们就已经在这里了。" }),
+                (Locale.Korean, new ApplianceInfo { Name = "캥거루 사인", Description = "그들은 도로가 생기기 전부터 이곳에 있었습니다." }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Kanguru İşareti", Description = "Yollar olmadan önce buradaydılar." }),
+            };
+
+            public static List<(Locale, ApplianceInfo)> SurfBoardRack => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo { Name = "Surf Boards", Description = "Not recommended for use on dry land." }),
+                (Locale.English, new ApplianceInfo { Name = "Surf Boards", Description = "Not recommended for use on dry land." }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "Planches de surf", Description = "Il n'est pas recommandé de l'utiliser sur la terre ferme." }),
+                (Locale.German, new ApplianceInfo { Name = "Surfbretter", Description = "Nicht für die Verwendung auf dem Land empfohlen." }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Tablas de surf", Description = "No se recomienda su uso en tierra firme." }),
+                (Locale.Polish, new ApplianceInfo { Name = "Deski surfingowe", Description = "Nie zaleca się używania na suchym lądzie." }),
+                (Locale.Russian, new ApplianceInfo { Name = "Доски для серфинга", Description = "Не рекомендуется использовать на суше." }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Pranchas de surfe", Description = "Não recomendado para uso em terra firme." }),
+                (Locale.Japanese, new ApplianceInfo { Name = "サーフボード", Description = "陸上での使用は推奨しない。" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "冲浪板", Description = "不建议在陆地上使用。" }),
+                (Locale.Korean, new ApplianceInfo { Name = "서핑 보드", Description = "마른 땅에서는 사용하지 않는 것이 좋습니다." }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Sörf Tahtaları", Description = "Kuru zeminde kullanılması tavsiye edilmez." }),
+            };
+
+            public static List<(Locale, ApplianceInfo)> CrocodileSign => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo { Name = "Crocodile Sign", Description = "Enter at your own risk… or as a snack." }),
+                (Locale.English, new ApplianceInfo { Name = "Crocodile Sign", Description = "Enter at your own risk… or as a snack." }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "Signe du crocodile", Description = "Participez à vos risques et périls... ou en guise de goûter." }),
+                (Locale.German, new ApplianceInfo { Name = "Krokodil-Schild", Description = "Eintritt auf eigene Gefahr... oder als Snack." }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Señal de cocodrilo", Description = "Entre por su cuenta y riesgo... o como aperitivo." }),
+                (Locale.Polish, new ApplianceInfo { Name = "Znak krokodyla", Description = "Wejście na własne ryzyko... lub jako przekąska." }),
+                (Locale.Russian, new ApplianceInfo { Name = "Знак крокодила", Description = "Входите на свой страх и риск... или в качестве закуски." }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Sinal de crocodilo", Description = "Entre por sua própria conta e risco... ou como um lanche." }),
+                (Locale.Japanese, new ApplianceInfo { Name = "クロコダイルサイン", Description = "入場は自己責任で...あるいはおやつとして。" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "鳄鱼标志", Description = "请自担风险......或作为点心入场。" }),
+                (Locale.Korean, new ApplianceInfo { Name = "악어 기호", Description = "본인 책임 하에 입장하거나 간식으로 즐기세요." }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Timsah İşareti", Description = "Riski size ait olmak üzere girin... ya da atıştırmalık olarak." }),
+            };
+
+            public static List<(Locale, ApplianceInfo)> ShoeProvider => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo { Name = "Shoes", Description = "Provides Shoes" }),
+                (Locale.English, new ApplianceInfo { Name = "Shoes", Description = "Provides Shoes" }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "Chaussures", Description = "Fournit des chaussures" }),
+                (Locale.German, new ApplianceInfo { Name = "Schuhe", Description = "Bietet Schuhe" }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Zapatos", Description = "Proporciona calzado" }),
+                (Locale.Polish, new ApplianceInfo { Name = "Buty", Description = "Zapewnia buty" }),
+                (Locale.Russian, new ApplianceInfo { Name = "Обувь", Description = "Предоставляет обувь" }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Calçados", Description = "Fornece calçados" }),
+                (Locale.Japanese, new ApplianceInfo { Name = "シューズ", Description = "シューズ" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "鞋类", Description = "提供鞋子" }),
+                (Locale.Korean, new ApplianceInfo { Name = "신발", Description = "신발 제공" }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Ayakkabılar", Description = "Ayakkabı Sağlar" }),
+            };
+
+            public static List<(Locale, ApplianceInfo)> VBProvider => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo { Name = "VB", Description = "Provides VB" }),
+                (Locale.English, new ApplianceInfo { Name = "VB", Description = "Provides VB" }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "VB", Description = "Fournit VB" }),
+                (Locale.German, new ApplianceInfo { Name = "VB", Description = "Bietet VB" }),
+                (Locale.Spanish, new ApplianceInfo { Name = "VB", Description = "Proporciona VB" }),
+                (Locale.Polish, new ApplianceInfo { Name = "VB", Description = "Zapewnia VB" }),
+                (Locale.Russian, new ApplianceInfo { Name = "VB", Description = "Предоставляет VB" }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "VB", Description = "Fornece VB" }),
+                (Locale.Japanese, new ApplianceInfo { Name = "ブイビー", Description = "VBを提供" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "VB", Description = "提供 VB" }),
+                (Locale.Korean, new ApplianceInfo { Name = "VB", Description = "VB" }),
+                (Locale.Turkish, new ApplianceInfo { Name = "VB", Description = "VB sağlar" }),
+            };
+
+            public static List<(Locale, ApplianceInfo)> KoalaBranch => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo { Name = "Koala Branch", Description = "Cuteness level: Unbearably high." }),
+                (Locale.English, new ApplianceInfo { Name = "Koala Branch", Description = "Cuteness level: Unbearably high." }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "Branche Koala", Description = "Niveau de mignonnerie : Insupportablement élevé." }),
+                (Locale.German, new ApplianceInfo { Name = "Koala-Zweig", Description = "Niedlichkeitsgrad: Unerträglich hoch." }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Sucursal Koala", Description = "Nivel de ternura: Insoportablemente alto." }),
+                (Locale.Polish, new ApplianceInfo { Name = "Oddział Koala", Description = "Poziom słodkości: Nieznośnie wysoki." }),
+                (Locale.Russian, new ApplianceInfo { Name = "Филиал Коала", Description = "Уровень миловидности: Невыносимо высокий." }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Filial Koala", Description = "Nível de fofura: Insuportavelmente alto." }),
+                (Locale.Japanese, new ApplianceInfo { Name = "コアラ支店", Description = "かわいさレベル：耐えられないほど高い。" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "考拉分部", Description = "可爱程度：高到无法忍受" }),
+                (Locale.Korean, new ApplianceInfo { Name = "코알라 지점", Description = "귀여움 수준: 참을 수 없을 정도로 높음." }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Koala Şubesi", Description = "Sevimlilik seviyesi: Dayanılmaz derecede yüksek." }),
+            };
+
+            public static List<(Locale, ApplianceInfo)> BoomerangBoard => new List<(Locale, ApplianceInfo)>
+            {
+                (Locale.Default, new ApplianceInfo { Name = "Mounted Boomerang", Description = "You threw it away, but it still came back." }),
+                (Locale.English, new ApplianceInfo { Name = "Mounted Boomerang", Description = "You threw it away, but it still came back." }),
+                (Locale.BlankText, new ApplianceInfo { Name = "", Description = "" }),
+                (Locale.French, new ApplianceInfo { Name = "Boomerang monté", Description = "Vous l'avez jeté, mais il est revenu." }),
+                (Locale.German, new ApplianceInfo { Name = "Montierter Bumerang", Description = "Du hast es weggeworfen, aber es kam trotzdem zurück." }),
+                (Locale.Spanish, new ApplianceInfo { Name = "Boomerang montado", Description = "Lo tiraste, pero aún así volvió." }),
+                (Locale.Polish, new ApplianceInfo { Name = "Zamontowany bumerang", Description = "Wyrzuciłeś go, ale i tak wrócił." }),
+                (Locale.Russian, new ApplianceInfo { Name = "Установленный бумеранг", Description = "Вы выбросили его, но он все равно вернулся." }),
+                (Locale.PortugueseBrazil, new ApplianceInfo { Name = "Bumerangue montado", Description = "Você o jogou fora, mas ele ainda voltou." }),
+                (Locale.Japanese, new ApplianceInfo { Name = "マウント・ブーメラン", Description = "捨ててもまた戻ってくる。" }),
+                (Locale.ChineseSimplified, new ApplianceInfo { Name = "安装回旋镖", Description = "你把它扔掉了，但它还是回来了。" }),
+                (Locale.Korean, new ApplianceInfo { Name = "장착 부메랑", Description = "버렸지만 여전히 돌아왔습니다." }),
+                (Locale.Turkish, new ApplianceInfo { Name = "Monteli Bumerang", Description = "Onu attın ama yine de geri geldi." }),
             };
         }
 

@@ -97,6 +97,7 @@ namespace AussieClassics.Utilities
 
         #region PlayerCosmetic
 
+        public static PlayerCosmetic GoldenKoala => (PlayerCosmetic)GDOUtils.GetCustomGameDataObject<GoldenKoala>().GameDataObject;
         public static PlayerCosmetic KangarooOutfit => (PlayerCosmetic)GDOUtils.GetCustomGameDataObject<KangarooOutfit>().GameDataObject;
 
         #endregion
@@ -112,8 +113,11 @@ namespace AussieClassics.Utilities
         public static Item FairyBreadCut => (Item)GDOUtils.GetCustomGameDataObject<FairyBreadCut>().GameDataObject;
         public static Item KiwiFruit => (Item)GDOUtils.GetCustomGameDataObject<KiwiFruit>().GameDataObject;
         public static Item MashedPassionFruit => (Item)GDOUtils.GetCustomGameDataObject<MashedPassionFruit>().GameDataObject;
+        public static Item OpenVBCan => (Item)GDOUtils.GetCustomGameDataObject<OpenVBCan>().GameDataObject;
         public static Item PassionFruit => (Item)GDOUtils.GetCustomGameDataObject<PassionFruit>().GameDataObject;
+        public static Item Shoe => (Item)GDOUtils.GetCustomGameDataObject<Shoe>().GameDataObject;
         public static Item SprinklesBag => (Item)GDOUtils.GetCustomGameDataObject<SprinklesBag>().GameDataObject;
+        public static Item VBCan => (Item)GDOUtils.GetCustomGameDataObject<VBCan>().GameDataObject;
         public static Item Vegemite => (Item)GDOUtils.GetCustomGameDataObject<Vegemite>().GameDataObject;
         public static Item VegemiteJar => (Item)GDOUtils.GetCustomGameDataObject<VegemiteJar>().GameDataObject;
         public static Item BurnedPavlovaTin => (Item)GDOUtils.GetCustomGameDataObject<BurnedPavlovaTin>().GameDataObject;
@@ -122,9 +126,6 @@ namespace AussieClassics.Utilities
         public static Item CutWaferSheet => (Item)GDOUtils.GetCustomGameDataObject<CutWaferSheet>().GameDataObject;
         public static Item TimTam => (Item)GDOUtils.GetCustomGameDataObject<TimTam>().GameDataObject;
         public static Item WaferSheet => (Item)GDOUtils.GetCustomGameDataObject<WaferSheet>().GameDataObject;
-        public static Item VBCan => (Item)GDOUtils.GetCustomGameDataObject<VBCan>().GameDataObject;
-        public static Item OpenVBCan => (Item)GDOUtils.GetCustomGameDataObject<OpenVBCan>().GameDataObject;
-        public static Item Shoe => (Item)GDOUtils.GetCustomGameDataObject<Shoe>().GameDataObject;
 
         #endregion
 
@@ -137,6 +138,7 @@ namespace AussieClassics.Utilities
         public static ItemGroup PlatedFairyBread => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedFairyBread>().GameDataObject;
         public static ItemGroup PlatedVegemiteToast => (ItemGroup)GDOUtils.GetCustomGameDataObject<PlatedVegemiteToast>().GameDataObject;
         public static ItemGroup RawPavlovaTin => (ItemGroup)GDOUtils.GetCustomGameDataObject<RawPavlovaTin>().GameDataObject;
+        public static ItemGroup Shoey => (ItemGroup)GDOUtils.GetCustomGameDataObject<Shoey>().GameDataObject;
         public static ItemGroup SugaredEggFoam => (ItemGroup)GDOUtils.GetCustomGameDataObject<SugaredEggFoam>().GameDataObject;
         public static ItemGroup TimTams => (ItemGroup)GDOUtils.GetCustomGameDataObject<TimTams>().GameDataObject;
         public static ItemGroup VegemiteToast => (ItemGroup)GDOUtils.GetCustomGameDataObject<VegemiteToast>().GameDataObject;
@@ -152,22 +154,30 @@ namespace AussieClassics.Utilities
         public static Dish DishPizzaEgg => (Dish)GDOUtils.GetCustomGameDataObject<DishPizzaEgg>().GameDataObject;
         public static Dish DishVegemiteToast => (Dish)GDOUtils.GetCustomGameDataObject<DishVegemiteToast>().GameDataObject;
         public static Dish DishVegemiteToastCheese => (Dish)GDOUtils.GetCustomGameDataObject<DishVegemiteToastCheese>().GameDataObject;
+        public static Dish SideShoey => (Dish)GDOUtils.GetCustomGameDataObject<SideShoey>().GameDataObject;
+        public static Dish SideTimTam => (Dish)GDOUtils.GetCustomGameDataObject<SideTimTam>().GameDataObject;
 
         #endregion
 
         #region Appliance
 
+        public static Appliance BoomerangBoard => (Appliance)GDOUtils.GetCustomGameDataObject<BoomerangBoard>().GameDataObject;
+        public static Appliance CrocodileSign => (Appliance)GDOUtils.GetCustomGameDataObject<CrocodileSign>().GameDataObject;
+        public static Appliance KangarooSign => (Appliance)GDOUtils.GetCustomGameDataObject<KangarooSign>().GameDataObject;
         public static Appliance KiwiFruitProvider => (Appliance)GDOUtils.GetCustomGameDataObject<KiwiFruitProvider>().GameDataObject;
+        public static Appliance KoalaBranch => (Appliance)GDOUtils.GetCustomGameDataObject<KoalaBranch>().GameDataObject;
         public static Appliance OutbackGround => (Appliance)GDOUtils.GetCustomGameDataObject<OutbackGround>().GameDataObject;
         public static Appliance OutbackTree => (Appliance)GDOUtils.GetCustomGameDataObject<OutbackTree>().GameDataObject;
         public static Appliance PassionFruitProvider => (Appliance)GDOUtils.GetCustomGameDataObject<PassionFruitProvider>().GameDataObject;
         public static Appliance RoadWithCars => (Appliance)GDOUtils.GetCustomGameDataObject<RoadWithCars>().GameDataObject;
         public static Appliance RoughTerrainLeft => (Appliance)GDOUtils.GetCustomGameDataObject<RoughTerrainLeft>().GameDataObject;
         public static Appliance RoughTerrainRight => (Appliance)GDOUtils.GetCustomGameDataObject<RoughTerrainRight>().GameDataObject;
+        public static Appliance ShoeProvider => (Appliance)GDOUtils.GetCustomGameDataObject<ShoeProvider>().GameDataObject;
         public static Appliance SprinklesProvider => (Appliance)GDOUtils.GetCustomGameDataObject<SprinklesProvider>().GameDataObject;
+        public static Appliance SurfBoardRack => (Appliance)GDOUtils.GetCustomGameDataObject<SurfBoardRack>().GameDataObject;
+        public static Appliance VBProvider => (Appliance)GDOUtils.GetCustomGameDataObject<VBProvider>().GameDataObject;
         public static Appliance VegemiteProvider => (Appliance)GDOUtils.GetCustomGameDataObject<VegemiteProvider>().GameDataObject;
         public static Appliance WaferProvider => (Appliance)GDOUtils.GetCustomGameDataObject<WaferProvider>().GameDataObject;
-        public static Appliance VBProvider => (Appliance)GDOUtils.GetCustomGameDataObject<VBProvider>().GameDataObject;
 
         #endregion
     }

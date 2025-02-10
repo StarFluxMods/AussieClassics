@@ -1,4 +1,6 @@
 ﻿using AussieClassics.Customs.Generic;
+using AussieClassics.Utilities;
+using KitchenData;
 using KitchenLib.Utils;
 using UnityEngine;
 
@@ -9,6 +11,6 @@ namespace AussieClassics.Customs.Items
         public override string UniqueNameID => "Shoe";
 
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Shoe").AssignMaterialsByNames();
-        // public override Appliance DedicatedProvider => GDOReferences.PassionFruitProvider;
+        public override Appliance DedicatedProvider => GDOReferences.ShoeProvider;
     }
 }

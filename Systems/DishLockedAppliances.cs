@@ -27,6 +27,11 @@ namespace AussieClassics.Systems
             {
                 GDOReferences.DishVegemiteToast.ID, new List<Appliance>
                 {
+                    GDOReferences.KangarooSign,
+                    GDOReferences.CrocodileSign,
+                    GDOReferences.KoalaBranch,
+                    GDOReferences.SurfBoardRack,
+                    GDOReferences.BoomerangBoard,
                 }
             }
         };

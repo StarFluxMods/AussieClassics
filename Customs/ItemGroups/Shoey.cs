@@ -11,6 +11,8 @@ namespace AussieClassics.Customs.ItemGroups
     {
         public override string UniqueNameID => "Shoey";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Shoey").AssignMaterialsByNames();
+        public override bool IsMergeableSide => true;
+
         public override List<ItemGroup.ItemSet> Sets => new List<ItemGroup.ItemSet>
         {
             new ItemGroup.ItemSet
